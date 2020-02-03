@@ -1,0 +1,33 @@
+* what is react ?
+    - React is a JavaScript library for building user interfaces.
+    - Reacts to state changes.
+    - It has virtual DOM.
+
+* Difference between Angular and React
+    - Angular is complete framework while React is a library.
+    - React view library is sync with the state (virtual Dom).
+
+* Install React
+    - sudo npm i -g create-react-app
+    - create-react-app --version
+    - create-react-app <project-directory>
+
+* Requirement
+    - Development Server
+    - Webpack
+    - Babel
+
+* Some Useful Commands
+
+    npm start :- Starts the development server.
+    
+    npm run build :- Bundles the app into static files for protection.
+
+    npm test :- start test runner.
+
+    npm run eject :- Removes this tool and copies build dependencies,configuration files and scripts.
+
+    we suggest you begin by typing:
+
+    cd react-app
+    npm-start

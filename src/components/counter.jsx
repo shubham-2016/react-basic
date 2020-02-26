@@ -14,11 +14,6 @@ class Counter extends Component {
     }
 
     render() { 
-        const listItems = this.state.tags.map((tag) =>
-            <li>{tag}</li>
-        );
-        
-        // You can write here js code as well.
 
         return (
             <React.Fragment>
@@ -37,7 +32,11 @@ class Counter extends Component {
     }
 
     getTags(){
-        return this.state.tags.map((tag) => <li>{tag}</li>);
+        if(this.state.tags.length === 0){
+            return 'Sorry There is no tag.';
+        }else{
+            return this.state.tags.map((tag) => <li key={tag}>{tag}</li>);
+        }
     }
 
     getBadgeClasses(){

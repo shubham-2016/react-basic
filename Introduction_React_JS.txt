@@ -30,4 +30,9 @@
     we suggest you begin by typing:
 
     cd react-app
+
     npm-start
+
+* What is Babel ?
+    - Mordern JavaScript Compiler.
+    - Babel take JSX code and convert into javscript which understand by the browser.

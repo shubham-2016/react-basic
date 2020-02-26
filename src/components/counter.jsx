@@ -13,12 +13,17 @@ class Counter extends Component {
         fontWeight: "bold"
     }
 
+    // constructor() {
+    //     super();
+    //     this.handledIncrement = this.handledIncrement.bind(this);
+    // }
+
     render() { 
 
         return (
             <React.Fragment>
                 <h1>Hello World, Welcome To React JS Tutorial</h1>
-                <button className="btn btn-secondary btn-sm">Increment</button>
+                <button onClick={ this.handledIncrement } className="btn btn-secondary btn-sm">Increment</button>
                 <div>
                     <span style = {this.styles} className = { this.getBadgeClasses() } >
                         { this.formatCount() }
@@ -49,6 +54,10 @@ class Counter extends Component {
         const { count } = this.state;
         return this.state.count === 0 ?  "Zero" : count;
     }
-}
+
+    handledIncrement = () => {
+        this.setState({ count: this.state.count + 1 });
+    }
+}   
  
 export default Counter;

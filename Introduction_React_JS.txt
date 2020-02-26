@@ -13,9 +13,9 @@
     - create-react-app <project-directory>
 
 * Requirement
-    - Development Server
-    - Webpack
-    - Babel
+    - Development Server => For Deployement.
+    - Webpack => Bundling Files.
+    - Babel => For Compiling Our JavaScript Code.
 
 * Some Useful Commands
 
@@ -36,3 +36,64 @@
 * What is Babel ?
     - Mordern JavaScript Compiler.
     - Babel take JSX code and convert into javscript which understand by the browser.
+
+* How to Install bootstrap in React Js ?
+    - npm install react-bootstrap bootstrap
+
+* What is React Component ?
+
+    - Components are the building blocks of any React app.
+    - Components are like functions that return HTML elements.
+    - Components are independent and reusable bits of code. 
+    - They serve the same purpose as JavaScript functions, but work in isolation and returns HTML via a render function.
+    - Components come in two types, Class components and Function components, in this tutorial we will concentrate on Class components.
+
+* How to create component ?
+
+    -- Create a Class Component
+        
+        - When creating a React component, the component's name must start with an upper case letter.
+        - The component has to include the extends React.Component statement, this statement creates an inheritance to React.Component.
+        - The component also requires a render() method, this method returns HTML.
+        
+        - Example
+
+        #  index.js
+            
+            import React from 'react';
+            import ReactDOM from 'react-dom';
+
+            class Car extends React.Component {
+                render() {
+                    return <h2>Hi, I am a Car!</h2>;
+                }
+            }
+
+            ReactDOM.render(<Car />, document.getElementById('root'));
+
+        # index.html
+
+        <div id="root"></div>
+
+    -- Create a Function Component
+        
+        - Example
+
+        #  index.js
+            
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+
+        function Car() {
+            return <h2>Hi, I am also a Car!</h2>;
+        }
+
+        ReactDOM.render(<Car />, document.getElementById('root'));
+
+* What is jsx ?
+    - JSX stands for JavaScript XML.
+    - JSX allows us to write HTML in React.
+    - JSX makes it easier to write and add HTML in React.
+    - Example. 
+
+* What is state ?

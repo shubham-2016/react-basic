@@ -6,6 +6,5 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Counter from './components/counter.jsx';
 
-const element = <h1>Hello World, Welcome To React JS Tutorial</h1>;
+//const element = <h1>Hello World, Welcome To React JS Tutorial</h1>;
 ReactDOM.render(<Counter/>,document.getElementById('root'));
-console.log(element);

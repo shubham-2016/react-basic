@@ -23,7 +23,7 @@ class Counter extends Component {
         return (
             <React.Fragment>
                 <h1>Hello World, Welcome To React JS Tutorial</h1>
-                <button onClick={ this.handledIncrement } className="btn btn-secondary btn-sm">Increment</button>
+                <button onClick={ () => { this.handledIncrement(1) } } className="btn btn-secondary btn-sm">Increment</button>
                 <div>
                     <span style = {this.styles} className = { this.getBadgeClasses() } >
                         { this.formatCount() }
@@ -55,8 +55,8 @@ class Counter extends Component {
         return this.state.count === 0 ?  "Zero" : count;
     }
 
-    handledIncrement = () => {
-        this.setState({ count: this.state.count + 1 });
+    handledIncrement = (num) => {
+        this.setState({ count: this.state.count + num });
     }
 }   
  

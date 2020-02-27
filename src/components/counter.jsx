@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Counter extends Component {
 
     state = {
-        count : 1,
+        count : this.props.value,
         file : 'sample',
         tags : ['tag1','tag2','tag3']
     };
@@ -19,11 +19,14 @@ class Counter extends Component {
     // }
 
     render() { 
-
         return (
             <React.Fragment>
-                <h1>Hello World, Welcome To React JS Tutorial</h1>
+                <h4>{this.props.title}</h4>
+                
                 <button onClick={ () => { this.handledIncrement(1) } } className="btn btn-secondary btn-sm">Increment</button>
+                
+                <button onClick={ () => this.props.onDelete(this.props.counterId) } className="btn btn-danger btn-sm m-2">Delete</button>
+                
                 <div>
                     <span style = {this.styles} className = { this.getBadgeClasses() } >
                         { this.formatCount() }
@@ -58,6 +61,7 @@ class Counter extends Component {
     handledIncrement = (num) => {
         this.setState({ count: this.state.count + num });
     }
+
 }   
  
 export default Counter;

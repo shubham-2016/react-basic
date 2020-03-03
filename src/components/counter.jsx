@@ -19,13 +19,14 @@ class Counter extends Component {
     // }
 
     render() { 
+        const { handledIncrement,counter,counterId } = this.props;
         return (
             <React.Fragment>
                 <h4>{this.props.title}</h4>
                 
-                <button onClick={ () => { this.props.handledIncrement(this.props.counter) } } className="btn btn-secondary btn-sm">Increment</button>
+                <button onClick={ () => { handledIncrement(counter) } } className="btn btn-secondary btn-sm">Increment</button>
                 
-                <button onClick={ () => this.props.onDelete(this.props.counterId) } className="btn btn-danger btn-sm m-2">Delete</button>
+                <button onClick={ () => this.props.onDelete(counterId) } className="btn btn-danger btn-sm m-2">Delete</button>
                 
                 <div>
                     <span style = {this.styles} className = { this.getBadgeClasses() } >

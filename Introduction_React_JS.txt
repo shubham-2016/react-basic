@@ -96,4 +96,13 @@
     - JSX makes it easier to write and add HTML in React.
     - Example. 
 
+* Difference Props vs State ?
+
 * What is state ?
+
+* What is stateless functional component ?
+
+* What is Life Cycle Hooks?
+    - Mount --> constructor, render, componentDidMount
+    - Update --> render, componentDidUpdate
+    - Unmount -->  componentWillMount
